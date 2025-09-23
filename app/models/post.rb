@@ -1,5 +1,3 @@
 class Post < ApplicationRecord
-
     attachment :image
-    
-end
+    belongs_to :user
