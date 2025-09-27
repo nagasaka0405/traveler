@@ -13,7 +13,7 @@
             ♥<%= @post.favorites.count %> いいね
           <% end %>
         <% else %>
-          <%= link_to post_favorites_path(@post), date: { turbo_method: :post }, class: "favorite_btn" do %>
+          <%= link_to post_favorites_path(@post), data: { turbo_method: :post }, class: "favorite_btn" do %>
             ♡<%= @post.favorites.count %> いいね
           <% end %>
         <% end %>
