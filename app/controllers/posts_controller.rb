@@ -42,7 +42,7 @@ class PostsController < ApplicationController
     if @post.save
       redirect_to post_path(@post.id)
     else
-      render :new, status: unprocessable_entity
+      render :new, status: :unprocessable_entity
     end
   end
 
