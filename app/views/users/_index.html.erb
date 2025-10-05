@@ -1,5 +1,5 @@
  <div class="row mt-5 w-50">
-    <% @users.each do |user| %>
+    <% users.each do |user| %>
         <div class="one-post card mt-3">
           <%= link_to user_path(user) do %>
             <div class="d-flex">
@@ -11,4 +11,4 @@
         </div>
     <% end %>
 </div>
-<%= paginate @users %>
+<%= paginate users %>
