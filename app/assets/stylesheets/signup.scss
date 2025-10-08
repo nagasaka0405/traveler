@@ -11,4 +11,19 @@
     background: linear-gradient(to right, rgba(13, 128, 214, 0.42), rgba(0, 107, 139, 0.12));
   }
 
-  
+  .box {
+    width: 350px;
+    height: 600px;
+    margin: auto;
+    border-radius: 4px;
+    border: 1px #ddd solid;
+  }
+
+  .box-inner {
+    padding: 20px 26px;
+    background-color: white;
+  }
+
+  h1 {
+    font-weight: 400
+  }
