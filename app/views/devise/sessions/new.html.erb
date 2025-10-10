@@ -22,16 +22,20 @@
         <%= f.password_field :password, autocomplete: "current-password" %>
       </div>
       <div class="box-login">
-        <%= f.check_box :remember_me %>
-        <%= f.label :remember, "ログインしたままにする" %>
+        <%= f.submit "ログイン" %>
+        <% if devise_mapping.rememberable? %>
+        <div class="remember">
+          <%= f.check_box :remember_me %>
+          <%= f.label :remember, "ログインしたままにする" %>
+        </div>
+        <% end %>
       </div>
       <% end %>
-    </div>
-    <% end %>
 
-    <div class="box-newusr">
-      <p><span>------------</span> 新しいお客様ですか？ <span>------------</span></p>
-      <%= link_to "新規登録", new_user_registration_path %>
+      <div class="box-newusr">
+        <p><span>------------</span> 新しいお客様ですか？ <span>------------</span></p>
+        <%= link_to "新規登録", new_user_registration_path %>
+      </div>
     </div>
   </div>
 </div>
